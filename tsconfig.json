@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "outDir": "built",
+    "target": "es2015",
+    "module": "commonjs",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monitord</title>
+
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./base.css">
+</head>
+
+<body>
+  <section
+    id="index-page"
+    class="index-page page-section"
+    style="display: none;">
+    <button class="btn" id="settings-button">Settings</button>
+
+    <form id="tumblr-tv">
+      <label for="tumblr-tv-search-box"
+        class="settings-label">
+          Tumblr TV
+          <input type="search"
+            id="tumblr-tv-search-box"
+            placeholder="Search Term"
+            name="term"
+            class="tumblr-tv-input"/>
+        </label>
+      <input type="submit"
+            class="btn"
+            value="Search">
+    </form>
+  </section>
+
+  <form class="settings-wrapper page-section"
+      style="display: none;"
+      id="settings-form">
+    <label for="name-label"
+          class="settings-label">
+        Monitor Name
+        <input
+          id="name-label"
+          placeholder="10W SB3"
+          name="name"
+          type="text"/>
+      </label>
+    <label for="server-label"
+          class="settings-label">
+        Coordination Server
+        <input
+          id="server-label"
+          placeholder="https://monitord.waffle.bf2.tumblr.net"
+          name="server"
+          type="url"/>
+      </label>
+
+    <input class="btn"
+          type="submit"
+          value="save" />
+  </form>
+
+  <section id="webview"
+    class="page-section"
+    style="display: none">
+  </section>
+
+  <div class="info">
+    <span class="name">
+    </span>
+    &mdash;
+    <span class="monitor">
+    </span>
+  </div>
+
+  <script>
+    // You can also require other files to run in this process
+    require('../built/index-page.js')
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+:root {
+  --color-main: #45424b;
+  --color-main-text: #eee;
+  --main-font: 'Avenir Next', sans-serif;
+
+  --color-neutral: #93a2a5;
+  --color-green: #7f9c67;
+  --color-yellow: #a28f4e;
+  --color-red: #a94e4e;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-main);
+  color: var(--color-main-text);
+  font-family: var(--main-font);
+}
+
+.page-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.index-page,
+.settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-content: center;
+}
+
+.settings-label {
+  display: block;
+  margin: 0 auto;
+  width: 75vw;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.settings-label input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 1vh;
+  font-size: 3vh;
+
+  border: 0.7vh solid var(--color-neutral);
+  background: var(--color-main);
+  color: var(--color-main-text);
+
+  padding: 0.7vh 3vh;
+}
+
+.settings-label input:invalid {
+  border-color: var(--color-red);
+}
+
+.btn {
+  display: block;
+  margin-top: 1.7vh;
+  margin: 0 auto;
+  border: 0.7vh solid var(--color-neutral);
+  background: var(--color-main);
+  color: var(--color-neutral);
+  font-size: 3vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.7vh 3vh;
+}
+.index-page .btn {
+  font-size: 2vh;
+  border-width: 0.4vh;
+}
+
+#settings-button {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+}
+
+#tumblr-tv-search-box {
+  width: 50vw;
+  border-width: 0.5vh;
+}
+
+#webview webview {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--color-main);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1vh 1.5vh;
+  border: 2px solid var(--color-neutral);
+  border-width: 2px 0 0 2px;
+  font-size: 2vh;
+  margin-bottom: -0.5vh;
+}

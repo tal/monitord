@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+
+  <style>
+    .settings-label {
+      display: block;
+    }
+
+    .settings-label input {
+      display: block;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    webview {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+
+  <webview id="main-webview"></webview>
+
+  <script>
+    // You can also require other files to run in this process
+
+    let loc = window.location.hash.substr(1)
+    console.log('hash', loc)
+
+    let webview = document.getElementById('main-webview')
+    setTimeout(() => {
+      webview.src = loc
+    }, 1000)
+
+  </script>
+</body>
+
+</html>

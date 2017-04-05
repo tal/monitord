@@ -1,0 +1,17 @@
+{
+  "name": "monitord",
+  "version": "1.0.0",
+  "main": "built/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/electron": "^1.4.35",
+    "@types/socket.io-client": "^1.4.29",
+    "electron": "^1.6.2",
+    "electron-settings": "^3.0.10",
+    "socket.io-client": "^1.7.3",
+    "typescript": "^2.2.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.6.0"
+  }
+}

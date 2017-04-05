@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monitord Settings</title>
+
+  <link rel="stylesheet"
+        href="./normalize.css">
+  <link rel="stylesheet"
+        href="./base.css">
+</head>
+
+<body>
+  <form class="settings-wrapper" id="settings-form">
+    <label for="name-label" class="settings-label">
+      Monitor Name
+      <input
+        id="name-label"
+        placeholder="10W SB3"
+        name="name"
+        type="text"/>
+    </label>
+    <label for="server-label" class="settings-label">
+      Coordination Server
+      <input
+        id="server-label"
+        placeholder="https://monitord.waffle.bf2.tumblr.net"
+        name="server"
+        type="url"/>
+    </label>
+
+    <input class="btn" type="submit" value="save"/>
+  </form>
+
+  <script>
+    // You can also require other files to run in this process
+    require('../built/settings.js')
+  </script>
+</body>
+
+</html>
